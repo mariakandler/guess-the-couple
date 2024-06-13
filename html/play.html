@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play - Guess the Couple</title>
+    <link rel="stylesheet" href="/css/play.css" />
+  </head>
+  <body>
+    <div id="level">
+      <h1 id="levelH1">Level 1</h1>
+    </div>
+    <div id="tipsDiv">
+      <h2 id="textTip"></h2>
+      <img alt="" id="imgTip" />
+      <br />
+    </div>
+    <button id="answerBtn">Answer</button>
+
+    <div id="responserDiv" class="popup">
+      <img src="/images/Ativo 3.png" id="closeBtn" style="position: relative; left: 130px; bottom: 10px; scale: 0.62;"/>
+      <h1 id="answer">Your answer:</h1>
+      <div class="inputs">
+        <label for="man">
+          <img
+            src="/images/man-symbol.png"
+            alt=""
+            class="symbols"
+          />Man:</label
+        >
+        <input type="text" id="man" />
+      </div>
+      <br />
+      <div class="inputs">
+        <label for="woman">
+          <img
+            src="/images/woman-symbol.png"
+            alt=""
+            class="symbols"
+          />Woman:</label
+        >
+        <input type="text" id="woman" />
+      </div>
+      <button id="submit">Send</button>
+    </div>
+
+    <div id="youWon">
+        <img id="youWonBtn" src="/images/Ativo 3.png" alt="" style="position: relative; left: 138px; bottom: 14px; transform: scale(0.6);">
+      <h1>Congrats!</h1>
+      <p>
+        You passed the romantic test! Now, the person who sent you this wants to ask you out &#9829;
+      </p>
+    </div>
+
+    <div id="wrongAnswer">
+        <p>Oops, wrong answer!</p>
+    </div>
+
+    <script type="module" src="/js/play.js"></script>
+  </body>
+</html>
